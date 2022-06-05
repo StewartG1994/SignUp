@@ -1,3 +1,7 @@
+:root{
+    --backgroundColor:#EEEEEE;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
+
     font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 	line-height: 1;
@@ -102,62 +107,178 @@ display: flex;
 }
 .form{
     width: 80vh;
+    margin: 50px;
+}
+
+.formcontent{
+    width: 80vh;
     display: flex;
     flex-direction: row;
-    gap:50px;
-    margin: 50px;
-    align-items:flex-start;
-    justify-content: start;
+    gap: 20px;
 }
 legend {
     font-size: 1.1rem;
 }
 
 input{
-    padding: 5px;
+    padding: 10px 10px 10px 40px;
     width: 250px;
     margin-top: 3px;
     margin-bottom: 3px;
     border-radius: 5px;
     border: 0.5px solid black;
 }
-
-input:invalid {
-    border-color: red;
-  }
   
   input:valid {
-    border-color: black;
+    background: url(check.svg);
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
   }
 
 input:focus
 {
     outline: none !important;
     border:1px solid white;
-    background-color: #EEEEEE;
+    box-shadow: 0 0 5px #398AB9;
+
+    background-color:var(--backgroundColor)
 }
 
 .account{
-  
+    width: 100%;
     display: flex;
+    flex: 1;
     flex-direction: column;
+    align-self: flex-end;
+
 }
 
 
 button{
     width: 250px;
     margin-top: 30px;
-    padding: 5px;
+    padding: 10px;
     border-radius: 5px;
     border: 1px solid slategray;
-    background-color: #EEEEEE;
+    background-color: var(--backgroundColor)
 }
 
 button:hover{
     background-color: #398AB9;
+    color: white;
 }
 
 a{
     color: black;
 
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.image{
+    width: 100%;
+}
+
+input{
+    width: 80%;
+}
+
+
+
+.header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.formcontent{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+input{
+    width: 450px;
+}
+
+.account{
+      
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+}
+
+
+
+@media only screen and (max-width: 800px){
+
+    .header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        margin-top: 100px;
+    }
+
+    .formcontent{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    .account{
+      
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+           
+        
+    }
+
+    input{
+        width: 300px;
+    }
+    
 }

@@ -36,43 +36,50 @@
     
 
     <form class="form" action="post">
-        
-
-
-    <div class ='formcontent'>
+    
         <legend>Lets do this!</legend><br>
+    <div class ='formcontent'>
+
+           
+   
         
+        <div class="formone">
         <label for="firstName">First Name</label><br>
-        <input type="text" name="firstName" id="firstName"><br>
+        <input required type="text" name="firstName" id="firstName"><br>
 
         <label for="Email">Email</label><br>
-        <input type="email" name="Email" id="email"><br>
+        <input  required type="email" name="Email" id="email"><br>
 
         <label for="Password">Password</label><br>
-        <input type="password" name="Password" id="password">
+        <input required type="password" name="Password" id="password">
+    </div>
 
 
-        <div class="account">
-            <button type ='submit'>Create account</button>
-            <br>
-            <p>Already have an account? <a href="#">Log In</a></p>
+      
+        <div class ='formtwo'>
+            
+            <label for="lastName">Last Name</label><br>
+            <input required type="text" name="lastName" id="lastName"><br>
+    
+            <label for="Phone">Phone Number</label><br>
+            <input required type="number" name="Phone" id="phone"><br>
+    
+            <label for="CPassword">Confirm Password</label><br>
+            <input  required type="password" name="CPassword" id="cpassword"><br>
+    
+            
         </div>
+
+      
         
     </div>
-
-    <div>
-        <br><br>
-        <label for="lastName">Last Name</label><br>
-        <input type="text" name="lastName" id="lastName"><br>
-
-        <label for="Phone">Phone Number</label><br>
-        <input type="number" name="Phone" id="phone"><br>
-
-        <label for="CPassword">Confirm Password</label><br>
-        <input type="password" name="CPassword" id="cpassword"><br>
-
-        
+    <div class="account">
+        <button type ='submit'>Create account</button>
+        <br>
+        <p>Already have an account? <a href="#">Log In</a></p>
     </div>
+
+
 </form>
 
 
