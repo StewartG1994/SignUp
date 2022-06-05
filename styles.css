@@ -77,7 +77,6 @@ display: flex;
     color: white;
 }
 
-
 .formSection{
     width: 55%;
     height: 100vh;
@@ -85,36 +84,80 @@ display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap:50px
-
-    
-    
-
-
-}
-
-.form{
-
-display: flex;
-align-items: center;
-text-align: start;
-gap:10px;
-width: 60%;
-padding-bottom: 50px;
-
-
 }
 
 .header{
-    justify-self: flex-start;
-    width: 60%;
-    text-align: start;
+    width: 80vh;
+    display: flex;
+    flex-direction: column;
+ 
+}
+
+.header >h1{
+    font-size: 1.5rem;
+}
+
+.header > h2 {
+    font-size:1.3rem;
+}
+.form{
+    width: 80vh;
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    margin: 50px;
+    align-items:flex-start;
+    justify-content: start;
+}
+legend {
+    font-size: 1.1rem;
+}
+
+input{
+    padding: 5px;
+    width: 250px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 5px;
+    border: 0.5px solid black;
+}
+
+input:invalid {
+    border-color: red;
+  }
+  
+  input:valid {
+    border-color: black;
+  }
+
+input:focus
+{
+    outline: none !important;
+    border:1px solid white;
+    background-color: #EEEEEE;
 }
 
 .account{
-    justify-self: flex-start;
-    width: 60%;
+  
     display: flex;
     flex-direction: column;
-    text-align: start;
+}
+
+
+button{
+    width: 250px;
+    margin-top: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid slategray;
+    background-color: #EEEEEE;
+}
+
+button:hover{
+    background-color: #398AB9;
+}
+
+a{
+    color: black;
+
 }
