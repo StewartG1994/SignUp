@@ -240,6 +240,10 @@ input{
 
 @media only screen and (max-width: 800px){
 
+    .image{
+        width: 100%;
+    }
+
     .header{
         width: 100%;
         display: flex;
